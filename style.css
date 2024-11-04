@@ -1,0 +1,65 @@
+
+form {
+    width: 350px;
+    height: 50px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    margin-top: 200px;
+}
+ .emial-inpt{
+    width: 100%;
+    height: 100%;
+    border: solid 1px rgb(80, 80, 82);
+    outline: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: 900;
+    padding-left: 10px;
+    padding-top: 20px;
+    background-color: #fff;
+    
+}
+
+form .emailP{
+    position: absolute;
+    font-size: 14px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: 900;
+    opacity:.7;
+    top: 20px;
+    left: 20px;
+    color: black;
+}
+
+ .emial-inpt:focus~ .emailP,
+ .emial-inpt:not(:placeholder-shown)~ .emailP{
+    transform: translate(-10px , -25px);
+    font-size: 12px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: 900;
+    transition: .2s;
+    opacity: 1;
+ }
+
+ .emial-inpt:focus{
+    border: solid 1px rgb(0, 0, 255);
+    filter: drop-shadow(0 0 1px rgb(0, 0, 255));
+}
+.emial-inpt:focus~ .emailP{
+    color: blue;
+}
+
+.emial-inpt.borderred{
+    border: solid 1px red;
+    filter: drop-shadow(0 0 1px rgb(255, 19, 19));
+}
+.emial-inpt.borderred:focus~ .emailP{
+    color: red;
+}
+.emailP.emailPl{
+    color: red;
+}
